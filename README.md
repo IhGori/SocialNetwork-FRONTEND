@@ -7,3 +7,5 @@ At its current stage, the project is still under active development, with ongoin
 
 ## Usage
 `npm run dev`
+
+Access: http://localhost:3000/login or http://localhost:3000/register
