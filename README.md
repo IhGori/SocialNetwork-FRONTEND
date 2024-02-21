@@ -10,5 +10,7 @@ At its current stage, the project is still under active development, with ongoin
 
 Access: http://localhost:3000/login or http://localhost:3000/register
 
+To use the chat it is necessary to add friends, currently this has not yet been implemented directly by the front-end and it is necessary to make a request through postman or the Django admin itself
+
 
 ![image](https://github.com/IhGori/SocialNetwork-FRONTEND/assets/73910233/112ba20d-32f2-4617-bde4-a214563af292)
