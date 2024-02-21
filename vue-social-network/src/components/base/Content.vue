@@ -13,7 +13,7 @@
 		<div class="container__myPost">
 			<div class="container__myPost-top">
 				<div class="container__myPost-top--profile">
-					fottto
+					<img :src="user.picture ? user.picture.replace('minio', '127.0.0.1') : ''" alt="">
 				</div>
 				<div class="container__myPost-top--message">
 					<textarea v-model="myPost" class="textArea" cols="30" rows="1"
@@ -48,7 +48,7 @@
 				</div>
 			</div>
 			<div class="container__card-picture">
-				<img :src="post.picture.replace('minio', '127.0.0.1')" alt="">
+				<img :src="post.picture ? post.picture.replace('minio', '127.0.0.1') : ''" alt="">
 			</div>
 			<div class="container__card-body">
 				{{ post.body }}
@@ -450,8 +450,13 @@ export default {
 			&--profile {
 				width: 35px !important;
 				height: 35px !important;
-				background: blue;
 				border-radius: 50%;
+
+				img {
+					width: 35px !important;
+					height: 35px !important;
+					border-radius: 50%;
+				}
 			}
 
 			&--message {
