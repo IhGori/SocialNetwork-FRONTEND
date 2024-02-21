@@ -1,0 +1,14 @@
+version: "3"
+
+services:
+  vue-social-network:
+    container_name: vue-social-network
+    build:
+      context: .
+      dockerfile: Dockerfile
+    volumes:
+      - ./vue-social-network:/socialnetwork
+    stdin_open: true
+    tty: true
+    ports:
+      - "3000:3000"
